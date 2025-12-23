@@ -1,0 +1,29 @@
+@import url(fields/index.css);
+
+fieldset {
+    border: none;
+
+    & legend {
+        font: var(--text-heading-sm);
+        color: var(--text-heading);
+    }
+}
+
+label {
+    font: var(--text-body-sm);
+    color: var(--text-body);
+
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.info-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.selects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+}
