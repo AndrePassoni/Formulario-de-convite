@@ -16,3 +16,7 @@ input[type="datetime-local"] {
         opacity: 0;
     }
 }
+
+textarea {
+    resize: none;
+}
