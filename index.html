@@ -42,7 +42,7 @@
                         <div class="info-container">
                             <div class="input-wrapper">
                                 <label for="title">Título</label>
-                                <input type="text" id="title" name="title" placeholder="Nome do evento">
+                                <input type="text" id="title" name="title" placeholder="Nome do evento" required>
                             </div>
 
                             <div class="selects-wrapper">    
@@ -89,6 +89,92 @@
                                 <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
                             </div>
                         </div>
+                    </fieldset>
+
+                    <fieldset class="customization">
+                        <div class="header-customization">
+                            <img src="./assets/icons/paintbrush-vertical.svg" alt="">
+                            <legend>Personalização</legend>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <label for="colors">Cor principal</label>
+                            <div class="radio-colors">
+                                <input type="radio" name="brand-light" id="brand-light">
+                                <input type="radio" name="navy" id="navy">
+                                <input type="radio" name="purple" id="purple">
+                                <input type="radio" name="fuschia" id="fuschia">
+                                <input type="radio" name="pink" id="pink">
+                                <input type="radio" name="danger" id="danger">
+                                <input type="radio" name="orange" id="orange">
+                                <input type="radio" name="yellow" id="yellow">
+                                <input type="radio" name="lime" id="lime">
+                                <input type="radio" name="green" id="green">
+                                <input type="radio" name="cyan" id="cyan">
+                            </div>
+                        </div>
+
+                        <div class="radio-images">
+                            <div class="radio-img">
+                                <label for="aniversario">Aniversáro</label>
+                                <img src="assets/images/Image-11.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="infantil">Infantil</label>
+                                <img src="assets/images/Image.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="formatura">Formatura</label>
+                                <img src="assets/images/Image-1.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="casamento">Casamento</label>
+                                <img src="assets/images/Image-2.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="cha-de-bebe">Chá de Bebê</label>
+                                <img src="assets/images/Image-3.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="cha-de-panela">Chá de panela</label>
+                                <img src="assets/images/Image-4.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="carnaval">Carnaval</label>
+                                <img src="assets/images/Image-5.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="pascoa">Páscoa</label>
+                                <img src="assets/images/Image-6.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="sao-joao">São João</label>
+                                <img src="assets/images/Image-7.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="halloween">Halloween</label>
+                                <img src="assets/images/Image-8.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="natal">Natal</label>
+                                <img src="assets/images/Image-9.svg" alt="">
+                            </div>
+                            <div class="radio-img">
+                                <label for="outro">Outro</label>
+                                <img src="assets/images/Image-10.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="style-button">
+                            <label for="style">Estilo</label>
+
+                        </div>
+
+                        <div class="file-input">
+                            <label for="capa">Foto de capa</label>
+                            <input type="file" name="capa" id="capa">
+                        </div>
+
                     </fieldset>
                 </form>
             </div>
