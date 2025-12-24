@@ -217,18 +217,27 @@
                             </div>
                         </div>
 
-                        <div class="style-button">
-                            <span class="text-style">Estilo</span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                            <span class="side-text text-style">Escuro</span>
-                        </div>
+                        <div class="styles-wrapper">
+                            <div class="style-button">
+                                <label class="text-style-title">Estilo</label>
 
-                        <div class="file-input">
-                            <label for="capa">Foto de capa</label>
-                            <input type="file" name="capa" id="capa">
+                                <div class="toggle-wrapper">
+                                    <label class="switch">
+                                        <input type="checkbox" id="theme-toggle">
+                                        <span class="slider round"></span>
+                                    </label>
+
+                                    <span class="status-text"></span>
+                                </div>
+                            </div>
+
+                            <div class="file-wrapper">
+                                <label for="capa">Foto de capa</label>
+                                <div class="file-input">
+                                    <img src="assets/icons/upload.svg" alt="" class="file-img">
+                                    <input type="file" name="capa" id="capa">
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                 </form>

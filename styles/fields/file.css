@@ -8,4 +8,16 @@
     outline: 1px solid var(--input-stroke);
     font: var(--text-body-md);
     color: var(--input-placeholder);
+    width: 7.438rem;
+    height: 2.5rem;
+    display: flex;
+}
+
+.file-wrapper {
+    display: grid;
+}
+
+.file-img {
+    width: 1rem;
+    height: 1rem;
 }
