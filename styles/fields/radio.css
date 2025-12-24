@@ -1,3 +1,6 @@
+/* =========================================
+   SEÇÃO 1: TIPO DE EVENTO (Presencial/Online)
+   ========================================= */
 .radio-group {
     display: flex;
     background-color: var(--input-base);
@@ -28,7 +31,6 @@
     padding: 0.5rem;
     border-radius: 0.25rem;
     cursor: pointer;
-
     margin-bottom: 0;
     
     font-family: var(--font-family-baloo-2);
@@ -38,7 +40,6 @@
     
     background-color: transparent;
     transition: all 0.2s ease-in-out;
-
     height: 100%;
 }
 
@@ -53,6 +54,9 @@
     font-weight: 700;
 }
 
+/* =========================================
+   SEÇÃO 2: CORES (ORIGINAL)
+   ========================================= */
 .radio-wrapper {
     margin-bottom: 1.75rem;
 }
@@ -60,32 +64,196 @@
 .radio-colors {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 1.5rem;
 }
 
-.radio-colors input[type="radio"] {
+#brand-light {
     appearance: none;
-    cursor: pointer;
-    
-    width: 2.5rem;
-    height: 2.5rem;
-    
     border-radius: 50%;
-    
-    border: 6px solid var(--shape-button);
-    
-    transition: transform 0.2s ease-in-out, border-color 0.2s;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--brand-light);
+    border: 6px solid transparent;
+    outline: 5px solid var(--shape-button);
+    cursor: pointer;
 }
 
+#navy {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--navy);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
 
-#brand-light { background-color: var(--brand-light); }
-#navy        { background-color: var(--navy); }
-#purple      { background-color: var(--purple); }
-#fuschia     { background-color: var(--fuschia); }
-#pink        { background-color: var(--pink); }
-#danger      { background-color: var(--danger); }
-#orange      { background-color: var(--orange); }
-#yellow      { background-color: var(--yellow); }
-#lime        { background-color: var(--lime); }
-#green       { background-color: var(--green); }
-#cyan        { background-color: var(--cyan); }
+#purple {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--purple);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#fuschia {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--fuschia);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#pink {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--pink);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#danger {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--danger);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#orange {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--orange);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#yellow {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--yellow);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#lime {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--lime);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#green {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--green);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+#cyan {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--cyan);
+    border: 2px solid transparent;
+    outline: 6px solid var(--shape-button);
+    cursor: pointer;
+}
+
+/* =========================================
+   SEÇÃO 3: TEMA DO EVENTO
+   ========================================= */
+.event-theme {
+    margin-bottom: 1.75rem;
+}
+
+.radio-images {
+    display: grid;
+    /* Aqui definimos o espaço igual (vertical e horizontal) */
+    gap: 0.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+}
+
+.radio-img-wrapper input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* ESTILO DO CARTÃO */
+.radio-img {
+    background-color: var(--shape-button);
+    width: 100%;
+    height: 6.438rem; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    
+    padding: 0.25rem;
+    gap: 0.5rem; 
+    
+    /* A CORREÇÃO ESTÁ AQUI: Removemos a margem padrão das labels */
+    margin-bottom: 0; 
+
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+    overflow: hidden; 
+}
+
+/* IMAGEM */
+.radio-img img {
+    width: 100%;
+    flex: 1; 
+    min-height: 0; 
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+/* TEXTO */
+.radio-img span {
+    font-family: var(--font-family-open-sans);
+    font-size: 0.875rem; 
+    color: var(--text-heading); 
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 0.25rem;
+}
+
+/* ESTADO SELECIONADO */
+.radio-img-wrapper input:checked + .radio-img {
+    border-color: var(--brand-light);
+    background-color: var(--shape-hover);
+}
