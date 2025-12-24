@@ -51,4 +51,8 @@ label {
         width: 1.5rem;
         height: 1.5rem;
     }
+
+    label {
+        margin-bottom: 1rem;
+    }
 }

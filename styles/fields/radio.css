@@ -53,118 +53,39 @@
     font-weight: 700;
 }
 
+.radio-wrapper {
+    margin-bottom: 1.75rem;
+}
+
 .radio-colors {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
-#brand-light {
+.radio-colors input[type="radio"] {
     appearance: none;
+    cursor: pointer;
+    
+    width: 2.5rem;
+    height: 2.5rem;
+    
     border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--brand-light);
-    border: 6px solid transparent;
-    outline: 5px solid var(--shape-button);
-
+    
+    border: 6px solid var(--shape-button);
+    
+    transition: transform 0.2s ease-in-out, border-color 0.2s;
 }
 
-#navy {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--navy);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
 
-#purple {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--purple);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#fuschia {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--fuschia);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#pink {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--pink);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#danger {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--danger);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#orange {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--orange);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#yellow {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--yellow);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#lime {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--lime);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#green {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--green);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
-
-#cyan {
-    appearance: none;
-    border-radius: 50%;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: var(--cyan);
-    border: 2px solid transparent;
-    outline: 6px solid var(--shape-button);
-}
+#brand-light { background-color: var(--brand-light); }
+#navy        { background-color: var(--navy); }
+#purple      { background-color: var(--purple); }
+#fuschia     { background-color: var(--fuschia); }
+#pink        { background-color: var(--pink); }
+#danger      { background-color: var(--danger); }
+#orange      { background-color: var(--orange); }
+#yellow      { background-color: var(--yellow); }
+#lime        { background-color: var(--lime); }
+#green       { background-color: var(--green); }
+#cyan        { background-color: var(--cyan); }
