@@ -56,3 +56,26 @@ label {
         margin-bottom: 1rem;
     }
 }
+
+.styles-wrapper {
+    margin-bottom: 3rem;
+}
+
+.header-contact {
+    display: flex;
+    vertical-align: middle;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    & img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.main-phone-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
