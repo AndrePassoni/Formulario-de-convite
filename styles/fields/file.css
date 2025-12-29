@@ -1,23 +1,54 @@
+/* Container apenas para garantir largura */
 .file-input {
+    width: 100%;
+}
+
+/* O input em si (controla o texto "Nenhum arquivo selecionado") */
+.file-input input[type="file"] {
     appearance: none;
     width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+    /* Estilo do texto do nome do arquivo */
+    font-family: var(--font-family-open-sans);
+    font-size: 0.875rem; /* text-body-sm */
+    color: var(--input-placeholder); /* Cor cinza do texto */
+}
+
+/* --- A MÁGICA: Estilizando o botão interno do input --- */
+.file-input input[type="file"]::file-selector-button {
+    /* Formato do Botão */
+    background-color: var(--shape-button);
+    border: none;
     border-radius: 0.5rem;
-    padding: 0.813rem 1rem;
-    background-color: var(--input-base);
-    border: 2px solid transparent;
-    outline: 1px solid var(--input-stroke);
-    font: var(--text-body-md);
-    color: var(--input-placeholder);
-    width: 7.438rem;
-    height: 2.5rem;
-    display: flex;
+    cursor: pointer;
+    
+    /* Tamanho e Espaçamento */
+    height: 3rem; /* Altura do botão */
+    margin-right: 1rem; /* Espaço entre o botão e o texto */
+    
+    /* Padding: Top/Bottom | Right | Left (maior na esquerda p/ caber o ícone) */
+    padding: 0 1rem 0 3rem; 
+
+    /* Texto do Botão */
+    font-family: var(--font-family-baloo-2);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-heading); /* Texto Branco */
+
+    /* Ícone via CSS (Background Image) */
+    background-image: url('../../assets/icons/upload.svg');
+    background-repeat: no-repeat;
+    background-position: 1rem center; /* Alinhado à esquerda */
+    background-size: 1.25rem; /* Tamanho do ícone */
+    
+    transition: background-color 0.2s;
 }
 
-.file-wrapper {
-    display: grid;
-}
-
-.file-img {
-    width: 1rem;
-    height: 1rem;
+/* Efeito Hover no botão */
+.file-input input[type="file"]::file-selector-button:hover {
+    background-color: var(--shape-hover);
 }
