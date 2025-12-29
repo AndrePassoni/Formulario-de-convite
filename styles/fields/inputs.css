@@ -8,6 +8,11 @@
     outline: 1px solid var(--input-stroke);
     font: var(--text-body-md);
     color: var(--input-placeholder);
+
+    &:focus {
+        border: 2px solid transparent;
+        outline: 1px solid var(--brand-light);
+    }
 }
 
 input[type="datetime-local"] {
@@ -36,4 +41,9 @@ textarea {
     outline: 1px solid var(--input-stroke);
     font: var(--text-body-md);
     color: var(--input-placeholder);
+
+    &:focus {
+        border: 2px solid transparent;
+        outline: 1px solid var(--brand-light);
+    }
 }

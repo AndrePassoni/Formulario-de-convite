@@ -70,6 +70,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #navy {
@@ -81,6 +85,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #purple {
@@ -92,6 +100,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #fuschia {
@@ -103,6 +115,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #pink {
@@ -114,6 +130,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #danger {
@@ -125,6 +145,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #orange {
@@ -136,6 +160,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #yellow {
@@ -147,6 +175,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #lime {
@@ -158,6 +190,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #green {
@@ -169,6 +205,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 #cyan {
@@ -180,6 +220,10 @@
     border: 6px solid transparent;
     outline: 5px solid var(--shape-button);
     cursor: pointer;
+
+    &:hover {
+        outline: 5px solid var(--shape-hover);
+    }
 }
 
 .event-theme {
@@ -238,7 +282,11 @@
     padding-bottom: 0.25rem;
 }
 
-.radio-img-wrapper input:checked + .radio-img {
-    border-color: var(--brand-light);
+.radio-img-wrapper input:hover + .radio-img {
     background-color: var(--shape-hover);
+}
+
+.radio-img-wrapper input:checked + .radio-img {
+    outline: 2px solid var(--brand-light);
+    background-color: var(--shape-button);
 }
