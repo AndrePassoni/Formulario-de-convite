@@ -48,3 +48,11 @@
 .file-input input[type="file"]::file-selector-button:hover {
     background-color: var(--shape-hover);
 }
+
+.file-input input:invalid ~ .input-error {
+    display: flex;
+}
+
+.file-input input:required:invalid::file-selector-button {
+    border: 1px solid var(--danger);
+}

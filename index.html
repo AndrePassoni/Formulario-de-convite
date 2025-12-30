@@ -43,6 +43,11 @@
                             <div class="input-wrapper">
                                 <label for="title">Título</label>
                                 <input type="text" id="title" name="title" placeholder="Nome do evento" required>
+                                
+                                <div class="input-error">
+                                    <img src="./assets/icons/circle-alert.svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
 
                             <div class="selects-wrapper">    
@@ -86,7 +91,12 @@
 
                             <div class="textarea-wrapper">
                                 <label for="description">Descrição</label>
-                                <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                                <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                                
+                                <div class="input-error">
+                                    <img src="./assets/icons/circle-alert.svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -234,7 +244,12 @@
                             <div class="file-wrapper">
                                 <label for="capa">Foto de capa</label>
                                 <div class="file-input">
-                                    <input type="file" name="capa" id="capa">
+                                    <input type="file" name="capa" id="capa" required>
+                                    
+                                    <div class="input-error">
+                                        <img src="./assets/icons/circle-alert.svg" alt="">
+                                        <span>Selecione uma imagem de capa</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -250,9 +265,14 @@
                             <div class="input-wrapper">
                                 <label for="name">Nome</label>
                                 <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                                
+                                <div class="input-error">
+                                    <img src="./assets/icons/circle-alert.svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
 
-                            <div class="main-phone-wrapper">
+                            <div class="mail-phone-wrapper">
                                 <div class="input-wrapper">
                                     <label for="mail">E-mail</label>
                                     <input type="email" name="mail" id="mail" placeholder="exemplo@email.com">
